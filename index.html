@@ -4,142 +4,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novasystem DG | Portafolio</title>
+    <title>Mi Portafolio - Frontend Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/icon/bordes.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-    <header class="hero-section">
-        <div class="header-content">
-            <span class="company-name">NOVASYSTEM DG</span>
-            <h1>PORTFOLIO</h1>
-            <div class="year-range">2025</div>
-        </div>
-    </header>
+    <div class="container">
+        <nav class="navbar">
+    <ul>
+        <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
+        <li><a href="#projects"><i class="fa-solid fa-folder"></i> Projects</a></li>
+        <li><a href="#services"><i class="fa-solid fa-code"></i> Services</a></li>
+        <li><a href="#contacto"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+    </ul>
+</nav>
 
-    <section class="about-section">
-        <div class="container about-flex">
-            <div class="photo-placeholder">
-                 <img src="assets/img/logo.jpeg" alt="Vista previa proyecto 1" class="project-img">
-            </div>
-            <div class="about-text">
-                <h2>SOBRE MÍ</h2>
-                <p>Mi nombre es Nico y soy desarrolladora web en formación.
-                    En NovaSystem Digital creo páginas web modernas, limpias y funcionales para pequeños negocios,
-                    utilizando tecnologías como HTML, CSS, JavaScript y WordPress.
-                    <br>
-                    Mi objetivo es ayudar a los emprendimientos a tener presencia digital mientras continúo mi formación
-                    en Ingeniería de Software, combinando diseño, funcionalidad y una experiencia clara para el usuario.
+        <main id="home" class="hero">
+            <div class="hero-content">
+                <span class="badge">Disponible para nuevos proyectos</span>
+                <h1>Hola, soy <span>Nova</span></h1>
+                <h2>Software Developer & Web Designer</h2>
+                <p>Impulsando emprendimientos a través de landing pages efectivas y conexión directa a WhatsApp con
+                    <strong>Nova System Digital</strong>.
                 </p>
-            </div>
-        </div>
-    </section>
 
-    <section class="projects-section">
-        <div class="container">
-            <h2>MIS PROYECTOS</h2>
+                <div class="cta-buttons">
+                    <a href="#contacto" class="btn btn-primary">Hablemos por WhatsApp</a>
+                    <a href="#projects" class="btn btn-secondary">Ver mis trabajos</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="image-card">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Nico&backgroundColor=0d1b3e"
+                        alt="Nova Avatar">
+                    <div class="social-tag">@nova_system_dg</div>
+                </div>
+            </div>
+        </main>
+<!-- /* //////////////////////////////////////////////////////////////////////////////////////////*/ -->
+        <section id="about" class="about-section">
+            <div class="about-card">
+                <div class="about-text">
+                    <span class="badge">Mi Historia</span>
+                    <h3>Nichole Andrade (Nova)</h3>
+                    <p>
+                       <strong>Técnica en Desarrollo de Software</strong> con enfoque en soluciones digitales para emprendimientos.
+                        Actualmente continuando mi formación superior en el Pascual Bravo para integrar tecnologías de
+                        vanguardia en cada proyecto de <strong>Nova System Digital.</strong>
+                    </p>
+                    <p>
+                        Me especializo en crear sitios web optimizados que conectan directamente con tu canal de ventas
+                        favorito: <strong>WhatsApp</strong>.
+                        Nada de sistemas complejos, solo resultados directos.
+                    </p>
+                    <ul class="skills-list">
+                        <li>🌐 HTML5 & CSS3</li>
+                        <li>⚡ JavaScript & Node.js</li>
+                        <li>🐘 PHP</li>
+                        <li>📱 Diseño Responsive</li>
+                    </ul>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-container">
+                        <img src="assets/img/logo.jpeg" alt="Nova Avatar">
+                        <div class="floating-badge">NOVA SYSTEM DIGITAL</div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+<!-- /* //////////////////////////////////////////////////////////////////////////////////////////*/ -->
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <h3>Trabajos Destacados</h3>
+            </div>
             <div class="projects-grid">
-                <div class="projects-grid">
-                    <a href="https://novasystem-dg.github.io/Restaurante-web/" class="project-card" target="_blank">
-                        <div class="project-img-container">
-                            <img src="assets/img/Comida.png" alt="Vista previa proyecto 1" class="project-img">
-                            <div class="project-overlay">
-                                <span>Página 1</span>
-                            </div>
+                <div class="project-card">
+                    <img src="assets/img/Login.png" alt="E-commerce">
+                    <div class="card-body">
+                        <h4>Formulario con Validación de Datos</h4>
+                        <p>
+                            Desarrollo de interfaz de contacto con un diseño limpio y
+                            minimalista.
+                        </p>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
                         </div>
-                        <h3>Venta de comidas rapidas</h3>
-                    </a>
+                        <div class="card-footer">
+                            <a href="http://formulario-basico.free.nf/?i=1" class="link-btn primary"
+                                target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
 
-                    <a href="https://novasystem-dg.github.io/tienda-online/" class="project-card" target="_blank">
-                        <div class="project-img-container">
-                            <img src="assets/img/Belleza.png" alt="Vista previa proyecto 2" class="project-img">
-                            <div class="project-overlay">
-                                <span>Página 2</span>
-                            </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=500&auto=format&fit=crop"
+                        alt="Beauty Shop">
+                    <div class="card-body">
+                        <h4>Glow Beauty Co.</h4>
+                        <p>Landing page minimalista para productos de skincare con integración a WhatsApp.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Interactions</span>
                         </div>
-                        <h3>Tienda virtual de productos de belleza</h3>
-                    </a>
+                        <div class="card-footer">
+                            <a href="https://novasystem-dg.github.io/tienda-online/" class="link-btn primary"
+                                target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
 
-                    <a href="http://formulario-basico.free.nf/?i=1" class="project-card" target="_blank">
-                        <div class="project-img-container">
-                            <img src="assets/img/Login.png" alt="Vista previa proyecto 3" class="project-img">
-                            <div class="project-overlay">
-                                <span>Página 3</span>
-                            </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=500&auto=format&fit=crop"
+                        alt="Pizza Shop">
+                    <div class="card-body">
+                        <h4>Sabor Supremo</h4>
+                        <p>Menú digital interactivo para restaurante con pedidos directos al chat. <br><br> </p>
+
+                        <div class="tech-stack">
+                            <span>Responsive</span>
+                            <span>UI/UX</span>
+                            <span>JavaScript</span>
                         </div>
-                        <h3>Formulario Registro e inicio de sesion</h3>
-                    </a>
+                        <div class="card-footer">
+                            <a href="https://novasystem-dg.github.io/Restaurante-web/" class="link-btn primary"
+                                target="_blank">Livbadgee Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+<!-- /* //////////////////////////////////////////////////////////////////////////////////////////*/ -->
+        <section id="services" class="services-section">
+            <div class="section-header">
+                <span class="badge">Qué Ofrezco</span>
+                <h3>Mis Servicios & Especialidades</h3>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h4>Web Development</h4>
+                    <p>Creo sitios web modernos, responsivos y optimizados utilizando las últimas tecnologías.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h4>Mobile Development</h4>
+                    <p>Diseño de aplicaciones móviles híbridas.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h4>UI/UX Design</h4>
+                    <p>Interfaces intuitivas centradas en el usuario.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- /* //////////////////////////////////////////////////////////////////////////////////////////*/ -->
+        <section id="contacto" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <span class="badge">Nova System Digital</span>
+                    <h3>Impulsemos tu marca</h3>
+                    <p>¿Listo para llevar tu emprendimiento al siguiente nivel con una web que venda por WhatsApp?</p>
 
-    <section class="skills-section">
-        <div class="container">
-            <h2>ESPECIALIDADES</h2>
-            <div class="skills-list">
+                    <div class="contact-details">
+                        <a href="mailto:novasystemdigital@gmail.com?subject=Consulta%20por%20Servicios%20Web"
+                            class="detail-item-link">
+                            <div class="detail-item">
+                                <span>📧</span>
+                                <p>novasystemdigital@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
 
-                <div class="skill-item">
-                    <img id="Icon" src="assets/icon/HTML.png" alt="HTML5">
-                    <span>HTML</span>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/novasystemdg" target="_blank" class="social-icon">IG</a>
+                        <a href="https://www.linkedin.com/in/nichole-andrade-848a2a37b" target="_blank"
+                            class="social-icon">LN</a>
+                        <a href="https://wa.me/573137079734" target="_blank" class="social-icon"
+                            style="background: #25d366; color: white; border: none;">WA</a>
+                    </div>
                 </div>
 
-                <div class="skill-item">
-                    <img id="Icon" src="assets/icon/CSS.png" alt="CSS3">
-                    <span>CSS</span>
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label>Tu Nombre</label>
+                        <input type="text" id="client-name" placeholder="¿Cómo te llamas?">
+                    </div>
+                    <div class="form-group">
+                        <label>Tu Proyecto</label>
+                        <textarea id="client-project" rows="4"
+                            placeholder="Cuéntame qué necesitas para tu negocio..."></textarea>
+                    </div>
+                    <button onclick="sendToWhatsapp()" class="btn btn-primary btn-block">Enviar a WhatsApp</button>
                 </div>
-
-                <div class="skill-item">
-                    <img id="Icon" src="assets/icon/JS.png" alt="JavaScript">
-                    <span>JAVASCRIPT</span>
-                </div>
-
-                <div class="skill-item">
-                    <img id="Icon1" src="assets/icon/PHP.png" alt="PHP">
-                    <span>PHP</span>
-                </div>
-
-                <div class="skill-item">
-                    <img id="Icon" src="assets/icon/NODEJS.png" alt="JavaScript">
-                    <span>NODE-JS</span>
-                </div>
-
-                <div class="skill-item">
-                    <img id="Icon" src="assets/icon/WP.png" alt="JavaScript">
-                    <span>WORDPRESS</span>
-                </div>
-
-
-
-
-
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="main-footer">
-    <p>&copy; 2025 Novasystem DG. Todos los derechos reservados.</p>
-    
-    <div class="social-links">
-        <a href="https://wa.me/3137079734" class="social-item" target="_blank">
-            <img id="Icon" src="assets/icon/social.png" alt="WhatsApp">
-            <span>WhatsApp</span>
-        </a>
 
-        <a href="https://www.instagram.com/novasystemdg?igsh=MW93NnByanByMHRpeA==" class="social-item" target="_blank">
-            <img id="Icon" src="assets/icon/instagram.png" alt="Instagram">
-            <span>Instagram</span>
-        </a>
+        <footer class="main-footer">
+            <p>&copy; 2026 Nova System Digital | Desarrollado por Nichole Andrade</p>
+        </footer>
 
-        <a href="https://www.linkedin.com/in/nichole-andrade-848a2a37b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-item" target="_blank">
-            <img id="Icon" src="assets/icon/linkedin.png" alt="LinkedIn">
-            <span>LinkedIn</span>
-        </a>
     </div>
-</footer>
+
+    <script>
+        function sendToWhatsapp() {
+            const name = document.getElementById('client-name').value;
+            const project = document.getElementById('client-project').value;
+            const phone = "573137079734";
+
+            const message = `Hola Nico! Mi nombre es ${name}. Tengo un proyecto: ${project}. Me gustaría trabajar contigo.`;
+            const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+            if (name && project) {
+                window.open(whatsappUrl, '_blank');
+            } else {
+                alert("Por favor rellena tu nombre y el proyecto para ayudarte mejor.");
+            }
+        }
+    </script>
+
+    <script>
+const sections = document.querySelectorAll("section, main");
+const navLinks = document.querySelectorAll(".navbar ul li a");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        if (scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>
 </body>
 
 </html>
